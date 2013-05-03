@@ -85,8 +85,12 @@ interface IAudioService {
     boolean shouldVibrate(int vibrateType);
 
     void setMode(int mode, IBinder cb);
+ 	
+ 	void setInCallMode(int state, IBinder cb);
 
     int getMode();
+
+    int getInCallMode();
 
     oneway void playSoundEffect(int effectType);
   
